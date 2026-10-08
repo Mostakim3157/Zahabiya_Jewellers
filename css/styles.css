@@ -477,7 +477,7 @@ input[type="range"] { width: 100%; accent-color: var(--gold); }
 .panel { display: flex; flex-direction: column; gap: 18px; padding: 28px; border-radius: 24px; background: var(--surface); border: 1px solid rgba(217, 180, 90, .22); }
 .panel-head { display: flex; align-items: center; gap: 12px; }
 .panel-head h2 { font-size: 28px; }
-.num { width: 34px; height: 34px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 99px; background: linear-gradient(135deg, #F3DE9C, #A97E28); color: var(--gold-ink); font-size: 14px; font-weight: 800; }
+.panel-num { width: 34px; height: 34px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 99px; background: linear-gradient(135deg, #F3DE9C, #A97E28); color: var(--gold-ink); font-size: 14px; font-weight: 800; }
 .choice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 12px; }
 .choice { position: relative; display: flex; align-items: center; gap: 14px; min-height: 64px; padding: 16px 18px; border-radius: 16px; border: 1px solid rgba(217, 180, 90, .3); cursor: pointer; }
 .choice input { position: absolute; opacity: 0; pointer-events: none; }
