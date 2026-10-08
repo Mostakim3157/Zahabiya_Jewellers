@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>/* set language & direction before first paint */try{var l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('zahabiya-lang');if(l==='ar'){document.documentElement.lang='ar';document.documentElement.dir='rtl'}}catch(e){}</script>
+  <title>Zahabiya Jewellers — Fine Gold in Doha, Qatar</title>
+  <meta name="description" content="Fine gold jewellery, bridal sets, bars and coins from Souq Waqif, Doha. Prices follow the live Qatar gold rate.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="ticker" aria-label="Today's gold rates">
+  <div class="ticker-track" data-ticker></div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Zahabiya Jewellers — home">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 4 L42 18 L24 44 L6 18 Z" stroke="#D9B45A" stroke-width="2"/><path d="M6 18 H42 M16 18 L24 44 L32 18 M16 18 L24 4 L32 18" stroke="#B88A2E" stroke-width="1.2"/></svg>
+      <span class="logo-text"><span class="logo-word shine">ZAHABIYA</span><span class="logo-sub">Jewellers · Doha</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="shop.html">Collections</a>
+      <a href="shop.html?tag=bridal">Bridal</a>
+      <a href="gold-rates.html">Gold Rates</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-btn" type="button" data-lang-toggle lang="ar">عربي</button>
+      <a class="icon-btn" href="shop.html#search" aria-label="Search the collection"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></a>
+      <a class="icon-btn" href="cart.html" aria-label="Shopping bag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count" data-cart-count hidden>0</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero carousel -->
+  <section class="hero" aria-roledescription="carousel" aria-label="Featured collections" data-carousel>
+    <span class="sparkle" style="top:60px;left:8%"></span>
+    <span class="sparkle" style="top:140px;left:46%;animation-delay:.8s"></span>
+    <span class="sparkle" style="bottom:120px;left:38%;animation-delay:1.4s"></span>
+    <span class="sparkle" style="top:90px;right:6%;animation-delay:2s"></span>
+
+    <div class="hero-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow eyebrow--line">Bridal Collection 2026</span>
+          <h1 class="hero-title" data-i18n="home.slide1">Crafted for the<br>moments that<br>last forever</h1>
+          <p class="hero-sub">Hand-finished 21K &amp; 22K bridal sets.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="shop.html?tag=bridal">Explore Bridal <svg class="i-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="gold-rates.html">Today's Gold Rate</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <span class="orbit orbit--outer"></span><span class="orbit orbit--inner"></span><span class="glow"></span>
+          <div class="hero-arch"><img src="images/al-arous-emerald-necklace.jpg" alt="Emerald and diamond bridal necklace on gold satin" width="736" height="1104"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow eyebrow--line">Everyday Luxe</span>
+          <h2 class="hero-title" data-i18n="home.slide2">Gold that moves<br>with you</h2>
+          <p class="hero-sub">Light 18K &amp; 21K pieces for every day.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="shop.html">Shop Daily Wear <svg class="i-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="gold-rates.html">Today's Gold Rate</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <span class="orbit orbit--outer"></span><span class="orbit orbit--inner"></span><span class="glow"></span>
+          <div class="hero-arch"><img src="images/tulip-pearl-bangle.jpg" alt="Gold tulip bangle with mother-of-pearl" width="704" height="1252" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow eyebrow--line">Invest in Gold</span>
+          <h2 class="hero-title" data-i18n="home.slide3">Bars &amp; coins,<br>999.9 fine</h2>
+          <p class="hero-sub">Certified 24K gold with guaranteed buy-back.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="shop.html?cat=bar">Shop Bars &amp; Coins <svg class="i-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="gold-rates.html">Today's Gold Rate</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <span class="orbit orbit--outer"></span><span class="orbit orbit--inner"></span><span class="glow"></span>
+          <div class="hero-arch"><img src="images/gold-bar-500g.jpg" alt="500 g fine gold bar on cream satin" width="490" height="555" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container hero-controls">
+      <div class="hero-dots">
+        <button class="dot" type="button" aria-label="Show slide 1" aria-current="true"></button>
+        <button class="dot" type="button" aria-label="Show slide 2"></button>
+        <button class="dot" type="button" aria-label="Show slide 3"></button>
+        <span class="hero-counter" data-counter>01 / 03</span>
+      </div>
+      <div class="hero-arrows">
+        <button class="icon-btn" type="button" data-prev aria-label="Previous slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button class="icon-btn" type="button" data-next aria-label="Next slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="trust" aria-label="Why shop with us">
+    <div class="container trust-inner">
+      <div class="trust-item"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Certified purity</div>
+      <div class="trust-item"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>Free delivery</div>
+      <div class="trust-item"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>Gold exchange</div>
+      <div class="trust-item"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg>Instalments</div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section container reveal">
+    <div class="section-head">
+      <h2 class="section-title" data-i18n="home.catTitle">Shop by <span class="shine italic">category</span></h2>
+      <a class="link-arrow" href="shop.html">View all collections <svg class="i-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="cat-row">
+      <a class="cat-card lift" href="shop.html?cat=ring"><div class="media"><img src="images/zaytoun-leaf-ring.jpg" alt="" loading="lazy"></div><div class="label"><div class="name">Rings</div><div class="name-ar" lang="ar">خواتم</div></div></a>
+      <a class="cat-card lift" href="shop.html?cat=necklace"><div class="media"><img src="images/maas-kite-pendant.jpg" alt="" loading="lazy"></div><div class="label"><div class="name">Necklaces</div><div class="name-ar" lang="ar">قلائد</div></div></a>
+      <a class="cat-card lift" href="shop.html?cat=bangle"><div class="media"><img src="images/tulip-pearl-bangle.jpg" alt="" loading="lazy"></div><div class="label"><div class="name">Bangles</div><div class="name-ar" lang="ar">أساور</div></div></a>
+      <a class="cat-card lift" href="shop.html?cat=earring"><div class="media"><img src="images/jadila-twist-drops.jpg" alt="" loading="lazy"></div><div class="label"><div class="name">Earrings</div><div class="name-ar" lang="ar">أقراط</div></div></a>
+      <a class="cat-card lift" href="shop.html?cat=bar"><div class="media"><img src="images/gold-bar-500g.jpg" alt="" loading="lazy"></div><div class="label"><div class="name">Bars &amp; Coins</div><div class="name-ar" lang="ar">سبائك</div></div></a>
+    </div>
+  </section>
+
+  <!-- Offers -->
+  <section class="section container reveal" aria-label="Offers">
+    <div class="promo-grid">
+      <div class="promo-feature">
+        <img class="photo" src="images/lawlab-spiral-pendant.jpg" alt="" loading="lazy">
+        <span class="orbit orbit--outer"></span>
+        <div class="copy">
+          <span class="promo-badge">QATAR NATIONAL DAY · 18 DEC</span>
+          <h3 data-i18n="home.offerTitle">0% Making<br>Charges</h3>
+          <p>On selected necklaces and bangles.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-gold" href="shop.html?offer=1">Shop the Offer</a>
+        </div>
+      </div>
+
+      <div class="promo-card promo-card--ivory lift">
+        <div class="copy">
+          <span class="kicker">GOLD EXCHANGE</span>
+          <h3 data-i18n="home.exchangeTitle">Old gold,<br>new story</h3>
+          <p>Upgrade your old jewellery at today's live rate.</p>
+          <a class="link-arrow" href="contact.html">Book a valuation <svg class="i-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="thumb thumb--round"><img src="images/gold-coin-8g.jpg" alt="Fine gold coins" loading="lazy"></div>
+      </div>
+
+      <div class="promo-card promo-card--warm lift">
+        <div class="copy">
+          <span class="kicker">INVESTMENT GOLD</span>
+          <h3 data-i18n="home.investTitle">Bars &amp; coins<br>from 1 gram</h3>
+          <p>Certified 24K gold with guaranteed buy-back.</p>
+          <a class="link-arrow" href="shop.html?cat=bar">Start investing <svg class="i-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="thumb thumb--arch"><img src="images/gold-bar-500g.jpg" alt="24K fine gold bar" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products -->
+  <section class="section container reveal">
+    <div class="section-head section-head--center">
+      <h2 class="section-title">The Treasure Room</h2>
+      <div class="tabs" role="tablist" aria-label="Featured products">
+        <button class="tab" type="button" role="tab" aria-selected="true" aria-controls="featured" data-tab="bestseller">Bestsellers</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="featured" data-tab="new">New Arrivals</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="featured" data-tab="bridal">Bridal</button>
+      </div>
+    </div>
+    <div class="product-grid" id="featured" role="tabpanel" data-featured></div>
+  </section>
+
+  <!-- Rates + bridal -->
+  <section class="section container reveal">
+    <div class="split">
+      <div class="rates-panel">
+        <header>
+          <h3>Today in Doha</h3>
+          <span class="live">LIVE · QAR / GRAM</span>
+        </header>
+        <div data-rates></div>
+        <a class="btn btn-ghost btn-block" href="gold-rates.html" style="margin-top:26px">Rate history &amp; calculator</a>
+      </div>
+      <div class="bridal lift">
+        <img class="photo" src="images/al-arous-emerald-necklace.jpg" alt="" loading="lazy">
+        <div class="copy">
+          <span class="eyebrow">The Bridal Atelier</span>
+          <h3 data-i18n="home.bridalTitle">For the <span class="shine italic">Zaffa</span>,<br>the Henna &amp; the vow</h3>
+          <p>Private appointments and bespoke sets, made in Doha.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="contact.html">Book Private Viewing</a>
+            <a class="btn btn-ghost" href="shop.html?tag=bridal">Browse Bridal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section container reveal">
+    <div class="newsletter">
+      <h2>Gold rate alerts</h2>
+      <form data-newsletter novalidate>
+        <label class="sr-only" for="nl">Email or WhatsApp number</label>
+        <input id="nl" type="text" placeholder="Email or +974 WhatsApp" autocomplete="email">
+        <button class="btn btn-gold" type="submit">Subscribe</button>
+        <p class="form-note" hidden></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo-word shine">ZAHABIYA</span>
+      <p>Fine gold jewellery, bars and coins from the heart of Souq Waqif, Doha.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="shop.html?cat=ring">Rings</a></li>
+        <li><a href="shop.html?cat=necklace">Necklaces</a></li>
+        <li><a href="shop.html?cat=bangle">Bangles</a></li>
+        <li><a href="shop.html?cat=earring">Earrings</a></li>
+        <li><a href="shop.html?cat=bar">Bars &amp; Coins</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Help</h4>
+      <ul>
+        <li><a href="gold-rates.html">Gold rates</a></li>
+        <li><a href="contact.html#faq">FAQ</a></li>
+        <li><a href="cart.html">Your bag</a></li>
+        <li><a href="about.html">Our story</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul>
+        <li data-site="address">Gold Souq, Souq Waqif, Doha</li>
+        <li>Sat–Thu 9:30–13:00 · 16:00–22:00</li>
+        <li>Fri 16:00–22:00</li>
+        <li><a href="tel:+974" data-site-link="tel" data-site="phone">+974 [PHONE]</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> Zahabiya Jewellers</span>
+    <span>Prices in Qatari Riyal (QAR)</span>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

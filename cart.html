@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>/* set language & direction before first paint */try{var l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('zahabiya-lang');if(l==='ar'){document.documentElement.lang='ar';document.documentElement.dir='rtl'}}catch(e){}</script>
+  <title>Your Bag — Zahabiya Jewellers</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Zahabiya Jewellers — home">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 4 L42 18 L24 44 L6 18 Z" stroke="#D9B45A" stroke-width="2"/><path d="M6 18 H42 M16 18 L24 44 L32 18 M16 18 L24 4 L32 18" stroke="#B88A2E" stroke-width="1.2"/></svg>
+      <span class="logo-text"><span class="logo-word shine">ZAHABIYA</span><span class="logo-sub">Jewellers · Doha</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Collections</a>
+      <a href="shop.html?tag=bridal">Bridal</a>
+      <a href="gold-rates.html">Gold Rates</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-btn" type="button" data-lang-toggle lang="ar">عربي</button>
+      <a class="icon-btn" href="shop.html#search" aria-label="Search the collection"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></a>
+      <a class="icon-btn" href="cart.html" aria-label="Shopping bag" aria-current="page" style="background:rgba(217,180,90,.16)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count" data-cart-count hidden>0</span></a>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="padding-top:48px">
+  <ol class="steps" aria-label="Checkout steps" style="list-style:none;padding:0;margin:0 0 36px">
+    <li class="step is-current" aria-current="step"><span>1</span>BAG</li>
+    <li class="step-line" aria-hidden="true"></li>
+    <li class="step"><span>2</span>DELIVERY</li>
+    <li class="step-line" aria-hidden="true"></li>
+    <li class="step"><span>3</span>PAYMENT</li>
+  </ol>
+
+  <h1 class="page-title" data-i18n="cart.title">Your <span class="shine italic">Bag</span></h1>
+  <p style="margin:8px 0 32px;color:var(--subtle)" data-count-text></p>
+
+  <div class="two-col">
+    <div class="main">
+      <div data-items style="display:flex;flex-direction:column;gap:18px"></div>
+
+      <div class="empty-state" data-empty hidden>
+        <span class="serif">Your bag is waiting for gold</span>
+        <a class="btn btn-gold" href="shop.html">Shop the collection</a>
+      </div>
+
+      <div class="gift-row" data-gift-row>
+        <label>
+          <input type="checkbox" data-gift>
+          <span><b style="display:block">Signature gift box &amp; card</b><small style="color:var(--muted)">Free</small></span>
+        </label>
+        <a class="link-arrow" href="shop.html">Continue shopping →</a>
+      </div>
+    </div>
+
+    <aside class="summary" aria-label="Order summary" data-summary>
+      <h2>Order summary</h2>
+      <div class="line"><span>Subtotal</span><span data-subtotal></span></div>
+      <div class="line"><span>Making-charge offer</span><span class="good" data-discount></span></div>
+      <div class="line"><span>Insured delivery</span><span class="good">Free</span></div>
+      <form class="promo-row" data-promo novalidate>
+        <label class="sr-only" for="promo">Promo code</label>
+        <input id="promo" placeholder="Promo code" autocomplete="off">
+        <button type="submit">Apply</button>
+      </form>
+      <p class="promo-msg" data-promo-msg aria-live="polite" hidden></p>
+      <div class="total"><span>TOTAL</span><strong class="shine" data-total></strong></div>
+      <p class="note" data-i18n="cart.instalment">or 4 payments of <span data-instalment></span> with partner banks</p>
+      <a class="btn btn-gold" href="checkout.html" data-checkout>Secure Checkout</a>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> Zahabiya Jewellers · <span data-site="address">Gold Souq, Souq Waqif, Doha</span></span>
+    <a href="tel:+974" data-site-link="tel" data-site="phone">+974 [PHONE]</a>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
