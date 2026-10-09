@@ -131,7 +131,6 @@
     'Fri 16:00–22:00': 'الجمعة 16:00–22:00',
     'Zahabiya Jewellers': 'مجوهرات ذهبية', 'Zahabiya Jewellers ·': 'مجوهرات ذهبية ·',
     'Zahabiya Jewellers · Doha, Qatar': 'مجوهرات ذهبية · الدوحة، قطر',
-    'Prices in Qatari Riyal (QAR)': 'الأسعار بالريال القطري (ر.ق)',
 
     /* Page titles & descriptions */
     'Zahabiya Jewellers — Fine Gold in Doha, Qatar': 'مجوهرات ذهبية — ذهب فاخر في الدوحة، قطر',
